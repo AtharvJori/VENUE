@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+   background-color:rgb(20, 170, 230);
+   border-bottom-left-radius: 30px;
+}
+.one{
+    width: 70%;
+    margin: 0 auto;
+   
+    display: flex;
+    justify-content: space-between;
+}
+.primary{
+    margin: 15px;
+    font-size: 2rem;
+    color:white;
+    
+}
+.tagline{
+    font-weight: bold;
+    text-align: right;
+    margin: 15px;
+}
+ul{
+    display: flex;
+}
+li{
+    list-style: none;
+    margin: 15px;
+}
+li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+li a:hover{
+    text-decoration:underline;
+    color: black;
+}
+.two{
+    width: 100%;
+    text-align: center;
+    padding: 3rem;
+    background-color: #cbe2c1;
+}
+.se{
+    width: 70%;
+    margin: 0 auto;
+}
+.two h1{
+    font-size: 2rem;
+    padding: 5px;
+}
+.two p{
+    font-size:1.5rem;
+    padding: 5px;
+}
+main{
+    width: 100%;
+    padding: 1rem;
+}
+.content{
+    width: 70%;
+    margin: 0 auto;
+   
+}
+.first , .second{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3rem;
+}
+.title{
+    margin: 1rem;
+}
+ 
+footer{
+    width: 100%;
+    background-color:rgb(20, 170, 230);
+}
+.last p{
+    margin: 15px;
+    font-weight: bold;
+}
+.last{
+    width: 70%;
+    margin: 0 auto;
+     padding-top: 20px;
+     padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and  (max-width: 950px){
+    .one{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+     } 
+     .last{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media only screen and  (max-width: 650px){
+    .one{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .nav ul{
+        display: block;
+    }
+    .content{
+        width: 90%;
+    }
+    .last{
+        width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    }
+    nav ul{
+        display: flex;
+       
+        justify-content:center;
+    }
+}
+@media only screen and  (max-width: 550px){
+    .nav ul{
+        display: flex;
+        flex-direction: row;
+        margin: 10px;
+    }
+    li a{
+        font-size: .7rem;
+    }
+    
+    main{
+        padding: 1rem;
+    }
+    .first , .second{
+        margin: 1rem;
+    }
+    .content{
+        width: 100%;
+    }
+}
+@media only screen and  (max-width:475px){
+    
+    li a{
+        font-size:.6rem;
+        }
+        .last{
+            width: 90%;
+        }
+}
+@media only screen and  (max-width:440px){
+    .tagline{
+        text-align: center;
+    }
+    li a{
+        font-size: .5rem;
+    }
+}
